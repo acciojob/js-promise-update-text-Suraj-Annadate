@@ -1,11 +1,1 @@
 /*  your css code here. If applicable */
-function updateTextWithPromise(#output) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve("Hello, world!");
-    }, 1000);
-  }).then((text) => {
-    const element = document.getElementById(#output);
-    element.textContent = text;
-  });
-}
